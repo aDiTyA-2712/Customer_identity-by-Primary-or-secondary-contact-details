@@ -116,6 +116,8 @@ class PrimContListViewPost(APIView):
             }
         }
         return Response(response_data, status=status.HTTP_200_OK)
+
+        
 @api_view(['GET'])   
 def PrimContListViewGet(ListAPIView):    
     query=PrimCont.objects.all()         #same mail, diff phn and diff phone ,same mail
