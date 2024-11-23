@@ -16,3 +16,5 @@ sqlparse==0.5.2
     # via django
 tzdata==2024.2
     # via django
+
+#last change on  Nov 24,2024 at 1:32 am 
