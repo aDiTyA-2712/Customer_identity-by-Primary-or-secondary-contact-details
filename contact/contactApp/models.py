@@ -14,8 +14,8 @@ class PrimCont(models.Model):
     phones=models.CharField(null=True,blank=True)
     linked_id=models.IntegerField(null=True,blank=True)
     link_precedence=models.CharField(choices=link_precedence_choice,default=PRIMARY)
-    createdAt = models.DateTimeField(auto_now_add=True)
-    updatedAt = models.DateTimeField(auto_now=True)
+    createdAt = models.DateTimeField(auto_now_add=True,blank=True)
+    updatedAt = models.DateTimeField(auto_now=True,blank=True)
     deletedAt= models.DateTimeField(null=True,blank=True)
 
     def __str__(self):
